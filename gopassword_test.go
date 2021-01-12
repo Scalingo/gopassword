@@ -1,31 +1,32 @@
 package gopassword
 
 import (
-	. "github.com/smartystreets/goconvey/convey"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestGenerate(t *testing.T) {
-	Convey("When we want to generate a password", t, func() {
-		Convey("By default, it should be 20 characters", func() {
-			So(len(Generate()), ShouldEqual, 20)
+	t.Run("When we want to generate a password", func(t *testing.T) {
+		t.Run("By default, it should be 20 characters", func(t *testing.T) {
+			assert.Len(t, Generate(), 20)
 		})
 
-		Convey("With an argument, the generated password should have its length", func() {
-			So(len(Generate(42)), ShouldEqual, 42)
+		t.Run("With an argument, the generated password should have its length", func(t *testing.T) {
+			assert.Len(t, Generate(42), 42)
 		})
 
-		Convey("With several arguments, only the first should be considered", func() {
-			So(len(Generate(10, 20, 30)), ShouldEqual, 10)
+		t.Run("With several arguments, only the first should be considered", func(t *testing.T) {
+			assert.Len(t, Generate(10, 20, 30), 10)
 		})
 	})
 
-	Convey("Given a generated password", t, func() {
+	t.Run("Given a generated password", func(t *testing.T) {
 		passwd := Generate(20)
-		Convey("The character frequency should be low", func() {
+		t.Run("The character frequency should be low", func(t *testing.T) {
 			fm := frequencyMap(passwd)
 			maxFreq := max(fm)
-			So(maxFreq, ShouldBeLessThanOrEqualTo, 3)
+			assert.LessOrEqual(t, maxFreq, 3)
 		})
 	})
 }
