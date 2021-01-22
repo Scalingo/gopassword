@@ -2,6 +2,8 @@
 
 ### To be Released
 
+### 1.0.1
+
 * Bump github.com/stretchr/testify from 1.6.1 to 1.7.0
 
 ### 1.0.0
