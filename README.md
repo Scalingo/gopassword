@@ -12,7 +12,7 @@ gopassword.Generate(42)
 
 ## Release a New Version
 
-Bump new version number in `CHANGELOG.md`.
+Bump new version number in `CHANGELOG.md` and `README.md`.
 
 Commit, tag and create a new release:
 
