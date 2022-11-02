@@ -2,7 +2,7 @@
 
 ## To be Released
 
-* Bump github.com/stretchr/testify from 1.7.1 to 1.8.0
+* Bump github.com/stretchr/testify from 1.7.1 to 1.8.1
 
 ## 1.0.2
 
