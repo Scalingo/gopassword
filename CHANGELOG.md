@@ -2,7 +2,10 @@
 
 ## To be Released
 
-* Bump github.com/stretchr/testify from 1.7.1 to 1.8.1
+## 1.0.3
+
+* chore(go): use go 1.20
+* Various dependencies updates
 
 ## 1.0.2
 
