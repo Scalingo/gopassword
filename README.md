@@ -3,7 +3,7 @@
 Simple password generator in Go. Use `crypto/rand`
 
 ```go
-// Passowrd of 20 characters
+// Password of 24 characters
 gopassword.Generate()
 
 // Password of 42 characters
@@ -17,7 +17,7 @@ Bump new version number in `CHANGELOG.md` and `README.md`.
 Commit, tag and create a new release:
 
 ```sh
-version="1.0.3"
+version="1.0.4"
 git switch --create release/${version}
 git add CHANGELOG.md README.md
 git commit -m "Bump v${version}"
