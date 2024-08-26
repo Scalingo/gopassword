@@ -25,8 +25,8 @@ func Generate(n ...int) string {
 	randString := base64.StdEncoding.EncodeToString(randBytes)
 
 	password := randString[:length]
-	password = strings.Replace(password, "+", defaultSpecialChar, -1)
-	password = strings.Replace(password, "/", defaultSpecialChar, -1)
+	password = strings.ReplaceAll(password, "+", defaultSpecialChar)
+	password = strings.ReplaceAll(password, "/", defaultSpecialChar)
 
 	return password
 }

@@ -24,7 +24,7 @@ func TestGenerate(t *testing.T) {
 		})
 
 		t.Run("It must contain only alphanumeric or underscore characters", func(t *testing.T) {
-			allowedCharacters, _ := regexp.Compile("^[a-zA-Z0-9_]+$")
+			allowedCharacters := regexp.MustCompile("^[a-zA-Z0-9_]+$")
 
 			// Try various times to ensure the result is not casual
 			for _ = range 1000 {
