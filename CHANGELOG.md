@@ -3,7 +3,7 @@
 ## To be Released
 
 * chore(go): use go 1.22
-* Raise default length from 20 to 24
+* Raise default length from 20 to 64
 * Allow `_` only as special character
 
 ## 1.0.3

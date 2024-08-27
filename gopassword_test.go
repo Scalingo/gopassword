@@ -9,8 +9,8 @@ import (
 
 func TestGenerate(t *testing.T) {
 	t.Run("When we want to generate a password", func(t *testing.T) {
-		t.Run("By default, it must be 24 characters", func(t *testing.T) {
-			assert.Len(t, Generate(), 24)
+		t.Run("By default, it must be 64 characters", func(t *testing.T) {
+			assert.Len(t, Generate(), 64)
 		})
 
 		t.Run("With an argument, the generated password must have its length", func(t *testing.T) {

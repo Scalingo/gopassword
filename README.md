@@ -3,7 +3,7 @@
 Simple password generator in Go. Use `crypto/rand`
 
 ```go
-// Password of 24 characters
+// Password of 64 characters
 gopassword.Generate()
 
 // Password of 42 characters

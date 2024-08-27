@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-const defaultLength = 24
+const defaultLength = 64
 const defaultSpecialChar = "_"
 
 func Generate(n ...int) string {
