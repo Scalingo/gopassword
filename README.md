@@ -1,4 +1,4 @@
-# Go Password v1.0.3
+# Go Password v1.0.4
 
 Simple password generator in Go. Use `crypto/rand`
 

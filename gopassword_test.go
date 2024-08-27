@@ -27,7 +27,7 @@ func TestGenerate(t *testing.T) {
 			allowedCharacters := regexp.MustCompile("^[a-zA-Z0-9_]+$")
 
 			// Try various times to ensure the result is not casual
-			for _ = range 1000 {
+			for range 1000 {
 				passwd := Generate(99)
 				assert.True(t, allowedCharacters.MatchString(passwd))
 			}
