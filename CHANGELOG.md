@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.4
+## To be Released
 
 * chore(go): use go 1.23
 * Raise default length from 20 to 24
