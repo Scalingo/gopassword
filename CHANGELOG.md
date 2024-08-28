@@ -2,9 +2,11 @@
 
 ## To be Released
 
-* chore(go): use go 1.22
+## 1.1.0
+
 * Raise default length from 20 to 64
 * Allow `_` only as special character
+* chore(go): use go 1.22
 
 ## 1.0.3
 
