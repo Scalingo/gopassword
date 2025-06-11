@@ -2,6 +2,8 @@
 
 ## To be Released
 
+* chore(go): use go 1.24
+
 ## 1.1.0
 
 * Raise default length from 20 to 64
