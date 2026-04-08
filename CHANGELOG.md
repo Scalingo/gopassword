@@ -2,6 +2,9 @@
 
 ## To be Released
 
+## 1.1.1
+
+* chore: bump various dependencies
 * chore(go): use go 1.24
 
 ## 1.1.0
