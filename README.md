@@ -1,4 +1,4 @@
-# Go Password v1.1.0
+# Go Password v1.1.1
 
 Simple password generator in Go. Use `crypto/rand`
 
@@ -17,7 +17,7 @@ Bump new version number in `CHANGELOG.md` and `README.md`.
 Commit, tag and create a new release:
 
 ```sh
-version="1.1.0"
+version="1.1.1"
 git switch --create release/${version}
 git add CHANGELOG.md README.md
 git commit -m "Bump v${version}"
